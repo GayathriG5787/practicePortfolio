@@ -67,6 +67,13 @@ body {
     height: 60px;
 }
 
+@media screen and (max-width: 577px) {
+
+    .header__social {
+        display: none;
+    }
+}
+
 /* Tablet only social shift */
 
 @media screen and (max-width: 1024px) and (min-width:577px) {
