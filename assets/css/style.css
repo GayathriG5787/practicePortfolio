@@ -1,4 +1,8 @@
 
+/* Google Poppins Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
 
     --hue-color: 100;
@@ -6,6 +10,9 @@
     --text-color: hsl(var(--hue-color),8%,85%);
     --body-color: hsl(var(--hue-color),19%,5%);
     --box-color: hsl(var(--hue-color),14%,10%);
+
+    /*Font and Typography*/
+    --body-font: 'Poppins', sans-serif;
 
     /*Margenes Bottom*/
     --mb-0-25: .25rem;
@@ -16,6 +23,15 @@
     --mb-2: 2rem;
     --mb-2-5:2.5rem;
     --mb-3: 3rem;
+
+    /*Font Weight*/
+    --font-medium:500;
+    --font-bold:600;
+}
+
+
+body, button, input  {
+    font-family: var(--body-font);
 }
 
 
@@ -49,6 +65,21 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 60px;
+}
+
+/* Tablet only social shift */
+
+@media screen and (max-width: 1024px) and (min-width:577px) {
+
+    .header__social {
+        display: flex;
+        align-items: center;
+        gap: 3.5rem;
+    }
+
+    .header__social-follow {
+        font-weight: var(--font-medium);
+    }
 }
 
 /* Tablet and mobile only screens */
