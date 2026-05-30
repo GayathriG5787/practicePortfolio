@@ -29,6 +29,13 @@
     --font-bold:600;
 }
 
+/* Base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body, button, input  {
     font-family: var(--body-font);
@@ -65,6 +72,21 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 60px;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 100px;
+    height: 100vh;
+    background-color: var(--body-color);
+    border-right: 1px solid var(--box-color);
+    transition: .5s;
+    z-index: 1050;
+}
+
+.nav__logo {
+    position: absolute;
 }
 
 @media screen and (max-width: 577px) {
