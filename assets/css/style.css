@@ -5,11 +5,27 @@
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --body-color: hsl(var(--hue-color),19%,5%);
     --box-color: hsl(var(--hue-color),14%,10%);
+
+    /*Margenes Bottom*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1:1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5:2.5rem;
+    --mb-3: 3rem;
 }
 
 
 body {
     background-color: var(--body-color);
+}
+
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* For Desktop, no header */
@@ -36,6 +52,12 @@ body {
 /* Tablet and mobile only screens */
 
 @media screen and (max-width: 1024px) {
+
+    .container {
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+
     .header {
         display: block;
         position: fixed;
