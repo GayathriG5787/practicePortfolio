@@ -91,6 +91,11 @@ body {
         right: -45%;
         position: absolute;
     }
+
+    .header__social-links {
+        display: inline-flex;
+        column-gap: 1rem;
+    }
 }
 
 /* Tablet and mobile only screens */
