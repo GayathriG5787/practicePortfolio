@@ -26,6 +26,13 @@ body {
     color: var(--title-color);
 }
 
+.nav__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
 /* Tablet and mobile only screens */
 
 @media screen and (max-width: 1024px) {
