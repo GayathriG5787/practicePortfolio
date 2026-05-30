@@ -79,6 +79,17 @@ body {
 
     .header__social-follow {
         font-weight: var(--font-medium);
+        position: relative;
+    }
+
+    .header__social-follow::after {
+        content: "";
+        width: 1rem;
+        height: 2px;
+        background-color: var(--text-color);
+        top: 50%;
+        right: -45%;
+        position: absolute;
     }
 }
 
