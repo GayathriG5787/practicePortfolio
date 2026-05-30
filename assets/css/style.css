@@ -4,16 +4,40 @@
     --hue-color: 100;
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --body-color: hsl(var(--hue-color),19%,5%);
+    --box-color: hsl(var(--hue-color),14%,10%);
 }
 
 
 body {
-    margin: 0;
     background-color: var(--body-color);
 }
+
+/* For Desktop, no header */
+
+.header {
+    display: none;
+}
+
+/* Hambuger icon is nav__toggle */
 
 .nav__toggle {
     font-size: 1.6rem;
     cursor: pointer;
     color: var(--title-color);
+}
+
+/* Tablet and mobile only screens */
+
+@media screen and (max-width: 1024px) {
+    .header {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;    
+        height: 60px;
+        background-color: var(--body-color);
+        border-bottom: 1px solid var(--box-color);
+        z-index: 1000;
+    }
 }
